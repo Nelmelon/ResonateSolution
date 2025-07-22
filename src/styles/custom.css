@@ -1,3 +1,40 @@
 body {
-  background-color: #f5f5f5;
+  background-color: #f5f7fa;
+  --color-deepblue: #22304a; /* deep blue */
+  --color-softwhite: #f9fafb; /* soft white */
+  --color-accent: #2dd4bf; /* accent teal */
+  --color-sand: #f4e2d8; /* gentle sand */
+}
+
+.bg-deepblue {
+  background-color: var(--color-deepblue);
+}
+.text-deepblue {
+  color: var(--color-deepblue);
+}
+.bg-softwhite {
+  background-color: var(--color-softwhite);
+}
+.text-softwhite {
+  color: var(--color-softwhite);
+}
+.bg-accent {
+  background-color: var(--color-accent);
+}
+.text-accent {
+  color: var(--color-accent);
+}
+.bg-sand {
+  background-color: var(--color-sand);
+}
+.text-sand {
+  color: var(--color-sand);
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+.animate-fadein {
+  animation: fadein 0.25s cubic-bezier(0.4,0,0.2,1);
 }
